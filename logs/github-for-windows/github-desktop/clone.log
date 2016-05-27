@@ -1,0 +1,117 @@
+2016-05-27 06:41:21.7686|WARN|thread: 1|StandardUserErrors|Showing user error Please check your log file for more details, or contact out support team if you are still having problems.
+GitHub.IO.ProcessException: 06:41:06.885332 git.c:351               trace: built-in: git 'clone' '--progress' '--recursive' '--' 'https://github.com/matheusmoreira/win32-test-paths.git' 'win32-test-paths'
+06:41:07.212584 run-command.c:336       trace: run_command: 'git-remote-https' 'origin' 'https://github.com/matheusmoreira/win32-test-paths.git'
+Cloning into 'win32-test-paths'...
+06:41:14.118275 run-command.c:336       trace: run_command: 'fetch-pack' '--stateless-rpc' '--stdin' '--lock-pack' '--thin' '--check-self-contained-and-connected' '--cloning' 'https://github.com/matheusmoreira/win32-test-paths.git/'
+* Couldn't find host github.com in the _netrc file; using defaults
+* timeout on name lookup is not supported
+*   Trying 192.30.252.122...
+* Connected to github.com (192.30.252.122) port 443 (#0)
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: C:\Users\Matheus\AppData\Local\GitHub\PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0\mingw32/ssl/certs/ca-bundle-ghfw.crt
+  CApath: none
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+* 	 subject: businessCategory=Private Organization; jurisdictionC=US; jurisdictionST=Delaware; serialNumber=5157550; street=88 Colin P Kelly, Jr Street; postalCode=94107; C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=github.com
+* 	 start date: Mar 10 00:00:00 2016 GMT
+* 	 expire date: May 17 12:00:00 2018 GMT
+* 	 subjectAltName: github.com matched
+* 	 issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=DigiCert SHA2 Extended Validation Server CA
+* 	 SSL certificate verify ok.
+> GET /matheusmoreira/win32-test-paths.git/info/refs?service=git-upload-pack HTTP/1.1
+Host: github.com
+User-Agent: git/2.8.1.windows.1
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 200 OK
+< Server: GitHub Babel 2.0
+< Content-Type: application/x-git-upload-pack-advertisement
+< Transfer-Encoding: chunked
+< Expires: Fri, 01 Jan 1980 00:00:00 GMT
+< Pragma: no-cache
+< Cache-Control: no-cache, max-age=0, must-revalidate
+< Vary: Accept-Encoding
+< X-GitHub-Request-Id: BFF90E41:3A7D:FBD432:5748174C
+< X-Frame-Options: DENY
+<
+* Connection #0 to host github.com left intact
+06:41:16.815476 git.c:351               trace: built-in: git 'fetch-pack' '--stateless-rpc' '--stdin' '--lock-pack' '--thin' '--check-self-contained-and-connected' '--cloning' 'https://github.com/matheusmoreira/win32-test-paths.git/'
+06:41:17.139762 run-command.c:336       trace: run_command: 'unpack-objects' '--pack_header=2,51'
+remote: Counting objects: 51, done.
+remote: Compressing objects:   3% (1/30)
+remote: Compressing objects:   6% (2/30)
+remote: Compressing objects:  10% (3/30)
+remote: Compressing objects:  13% (4/30)
+remote: Compressing objects:  16% (5/30)
+remote: Compressing objects:  20% (6/30)
+remote: Compressing objects:  23% (7/30)
+remote: Compressing objects:  26% (8/30)
+remote: Compressing objects:  30% (9/30)
+remote: Compressing objects:  33% (10/30)
+remote: Compressing objects:  36% (11/30)
+remote: Compressing objects:  40% (12/30)
+remote: Compressing objects:  43% (13/30)
+remote: Compressing objects:  46% (14/30)
+remote: Compressing objects:  50% (15/30)
+remote: Compressing objects:  53% (16/30)
+remote: Compressing objects:  56% (17/30)
+remote: Compressing objects:  60% (18/30)
+remote: Compressing objects:  63% (19/30)
+remote: Compressing objects:  66% (20/30)
+remote: Compressing objects:  70% (21/30)
+remote: Compressing objects:  73% (22/30)
+remote: Compressing objects:  76% (23/30)
+remote: Compressing objects:  80% (24/30)
+remote: Compressing objects:  83% (25/30)
+remote: Compressing objects:  86% (26/30)
+remote: Compressing objects:  90% (27/30)
+remote: Compressing objects:  93% (28/30)
+remote: Compressing objects:  96% (29/30)
+remote: Compressing objects: 100% (30/30)
+remote: Compressing objects: 100% (30/30), done.
+06:41:18.750241 git.c:351               trace: built-in: git 'unpack-objects' '--pack_header=2,51'
+remote: Total 51 (delta 14), reused 48 (delta 11), pack-reused 0
+06:41:19.231715 run-command.c:336       trace: run_command: 'rev-list' '--objects' '--stdin' '--not' '--all'
+Checking connectivity... 06:41:20.841665 git.c:351               trace: built-in: git 'rev-list' '--objects' '--stdin' '--not' '--all'
+* Couldn't find host github.com in the _netrc file; using defaults
+* Found bundle for host github.com: 0x21208f0 [can pipeline]
+* Re-using existing connection! (#0) with host github.com
+* Connected to github.com (192.30.252.122) port 443 (#0)
+> POST /matheusmoreira/win32-test-paths.git/git-upload-pack HTTP/1.1
+Host: github.com
+User-Agent: git/2.8.1.windows.1
+Accept-Encoding: gzip
+Content-Type: application/x-git-upload-pack-request
+Accept: application/x-git-upload-pack-result
+Content-Length: 150
+
+* upload completely sent off: 150 out of 150 bytes
+< HTTP/1.1 200 OK
+< Server: GitHub Babel 2.0
+< Content-Type: application/x-git-upload-pack-result
+< Transfer-Encoding: chunked
+< Expires: Fri, 01 Jan 1980 00:00:00 GMT
+< Pragma: no-cache
+< Cache-Control: no-cache, max-age=0, must-revalidate
+< Vary: Accept-Encoding
+< X-GitHub-Request-Id: BFF90E41:3A7D:FBD438:5748174D
+< X-Frame-Options: DENY
+<
+* Connection #0 to host github.com left intact
+done.
+error: unable to create file " (Invalid argument)
+error: unable to create file * (Invalid argument)
+error: unable to create file : (Invalid argument)
+error: unable to create file < (Invalid argument)
+error: unable to create file > (Invalid argument)
+error: unable to create file ? (Invalid argument)
+error: unable to create file | (Invalid argument)
+fatal: unable to checkout working tree
+warning: Clone succeeded, but checkout failed.
+You can inspect what was checked out with 'git status'
+and retry the checkout with 'git checkout -f HEAD'
