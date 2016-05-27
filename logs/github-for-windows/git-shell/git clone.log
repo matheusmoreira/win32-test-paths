@@ -1,0 +1,14 @@
+$ git clone https://github.com/matheusmoreira/win32-test-paths.git &> logs/github-for-windows/git-shell/'git clone'.log
+Cloning into 'win32-test-paths'...
+error: unable to create file " (Invalid argument)
+error: unable to create file * (Invalid argument)
+error: unable to create file : (Invalid argument)
+error: unable to create file < (Invalid argument)
+error: unable to create file > (Invalid argument)
+error: unable to create file ? (Invalid argument)
+error: unable to create file | (Invalid argument)
+fatal: unable to checkout working tree
+warning: Clone succeeded, but checkout failed.
+You can inspect what was checked out with 'git status'
+and retry the checkout with 'git checkout -f HEAD'
+
