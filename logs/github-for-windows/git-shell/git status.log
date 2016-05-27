@@ -1,0 +1,26 @@
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    "\""
+	deleted:    *
+	deleted:    :
+	deleted:    <
+	deleted:    >
+	deleted:    ?
+	deleted:    |
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	"\357\200\242"
+	"\357\200\252"
+	"\357\200\272"
+	"\357\200\274"
+	"\357\200\276"
+	"\357\200\277"
+	"\357\201\274"
+
+no changes added to commit (use "git add" and/or "git commit -a")
