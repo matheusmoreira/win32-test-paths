@@ -1,0 +1,7 @@
+2016-05-27 07:38:02.0883|WARN|thread: 1|StandardUserErrors|Showing user error You might need to open a shell and debug the state of this repo.
+System.ArgumentException: Illegal characters in path.
+   in System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   in System.IO.Path.Combine(String path1, String path2)
+   in GitHub.Models.UncommittedFile..ctor(IRepositoryModel repository, String relativeFilePath, String changeType, String oldRelativePath)
+   in GitHub.Helpers.GitExtensions.<>c__DisplayClass5.<GetFileFromStatus>b__4(Status x)
+   in System.Reactive.Linq.ObservableImpl.Select`2._.OnNext(TSource value)
